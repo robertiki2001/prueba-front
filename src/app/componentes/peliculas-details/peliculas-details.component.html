@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Id: {{ pelicula.id }}</h5>
+                    <h5 class="card-title">{{ pelicula.adult }}</h5>
+                    <h5 class="card-title">{{ pelicula.original_title }}</h5>
+                    <h5 class="card-title">{{ pelicula.overview }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Genres</h6>
+                    <ul class="list-group">
+                        @for (gener of pelicula.genres; track $index) {
+                            <li class="list-group-item">{{gener.name}}</li>
+                        }
+                    </ul>
+                    <h6 class="card-subtitle mb-2 mt-4 text-muted">Production Companies</h6>
+                    <ul class="list-group">
+                        @for (companies of pelicula.production_companies; track $index) {
+                            <li class="list-group-item">{{companies.name}}</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

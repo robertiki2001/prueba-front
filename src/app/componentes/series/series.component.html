@@ -1,0 +1,17 @@
+<div class="container mt-5">
+    <h2>All series</h2>
+    <div class="row">
+        @for (serie of series; track $index) {
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Id: {{ serie.id }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Adult: {{ serie.adult }}</h6>
+                        <h5 class="card-title">{{ serie.original_name }}</h5>
+                        <p class="card-text">{{ serie.overview }}</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
