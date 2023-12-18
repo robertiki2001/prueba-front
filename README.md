@@ -1,3 +1,13 @@
+# Funcionamiento APP
+1. Ejecutar npm install
+2. Ejecutar npm run start
+
+Para acceder a las diferentes vistas tendras que cambiar la url:
+VER PELICULAS: http://localhost:4200/peliculas
+VER SERIES: http://localhost:4200/series
+VER PELICULA DETAIL: http://localhost:4200/peliculas/5
+VER SERIES DETAIL: http://localhost:4200/series/5
+
 # PruebaBackend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
